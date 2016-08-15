@@ -12,8 +12,8 @@
       height: 50px;
       background: url("../img/logo.png") no-repeat; }
     .home_bg .home .navigation {
+      float: right;
       z-index: 100;
-      position: fixed;
       right: 200px;
       top: 60px;
       list-style-type: none;
@@ -109,13 +109,13 @@
     .about_bg .services .service_item .service_text {
       font-size: 20px; }
     .about_bg .services .service_item .service_1 {
-      background-image: url("../img/flag.png"); }
+      background-image: url("../img/services/flag.png"); }
     .about_bg .services .service_item .service_2 {
-      background-image: url("../img/pencil.png"); }
+      background-image: url("../img/services/pencil.png"); }
     .about_bg .services .service_item .service_3 {
-      background-image: url("../img/gears.png"); }
+      background-image: url("../img/services/gears.png"); }
     .about_bg .services .service_item .service_4 {
-      background-image: url("../img/rocket.png"); }
+      background-image: url("../img/services/rocket.png"); }
 
 .team_bg {
   background-color: #e7f1f8; }
@@ -141,7 +141,15 @@
         display: block;
         width: 665px;
         margin-top: 50px; }
+  .team_bg .team_item:hover {
+    -webkit-transform: scale(1.05, 1.05);
+        -ms-transform: scale(1.05, 1.05);
+            transform: scale(1.05, 1.05); }
   .team_bg .team_item {
+    -webkit-transition: -webkit-transform .3s;
+    transition: -webkit-transform .3s;
+    transition: transform .3s;
+    transition: transform .3s, -webkit-transform .3s;
     margin-top: 300px;
     height: 540px;
     width: 252px;
@@ -152,16 +160,16 @@
     padding: 0 10px 0 10px;
     display: inline-block; }
     .team_bg .team_item .photo_1 {
-      background: url("../img/team.png") no-repeat;
+      background: url("../img/team/team.png") no-repeat;
       background-position: center 0; }
     .team_bg .team_item .photo_2 {
-      background: url("../img/team.png") no-repeat;
+      background: url("../img/team/team.png") no-repeat;
       background-position: center 0; }
     .team_bg .team_item .photo_3 {
-      background: url("../img/team.png") no-repeat;
+      background: url("../img/team/team.png") no-repeat;
       background-position: center 0; }
     .team_bg .team_item .photo_4 {
-      background: url("../img/team.png") no-repeat;
+      background: url("../img/team/team.png") no-repeat;
       background-position: center 0; }
     .team_bg .team_item span {
       color: #27283d; }
@@ -188,7 +196,8 @@
       margin-left: 15px; }
     .team_bg .team_item ul {
       margin-top: 50px;
-      list-style-type: none; }
+      list-style-type: none;
+      margin-left: 40px; }
       .team_bg .team_item ul .sprite {
         background-image: url("../img/social_sprite.png"); }
       .team_bg .team_item ul li {
@@ -207,6 +216,79 @@
         background-position: -89px -2px; }
       .team_bg .team_item ul li:nth-child(4) {
         background-position: -133px -2px; }
+
+.skills {
+  height: 750px;
+  margin: 0 auto;
+  max-width: 1100px;
+  padding-top: 60px;
+  position: relative; }
+  .skills .skills_text {
+    position: absolute;
+    top: 117px;
+    left: 215px;
+    text-align: center; }
+    .skills .skills_text .border {
+      background-color: #c7d9e5; }
+    .skills .skills_text .skills_title {
+      color: #3c4761;
+      font-size: 35px;
+      font-weight: bold; }
+    .skills .skills_text .skills_subtitle {
+      font-size: 17px;
+      display: block;
+      width: 665px;
+      margin-top: 50px; }
+  .skills .skill_items {
+    margin-top: 326px; }
+    .skills .skill_items .skill_name {
+      font-size: 30px;
+      text-align: center; }
+    .skills .skill_items .skill_item {
+      float: left;
+      width: 25%;
+      text-align: center; }
+      .skills .skill_items .skill_item canvas {
+        width: 100%; }
+
+.portfolio_bg {
+  background-color: #ffdd99; }
+  .portfolio_bg .portfolio {
+    height: 1400px;
+    margin: 0 auto;
+    max-width: 1100px;
+    padding-top: 60px;
+    position: relative; }
+    .portfolio_bg .portfolio .portfolio_item {
+      height: 300px;
+      width: 49%;
+      display: inline-block; }
+    .portfolio_bg .portfolio .first {
+      background-image: url(../img/works/work1.png); }
+    .portfolio_bg .portfolio .second {
+      background-image: url(../img/works/work2.png); }
+    .portfolio_bg .portfolio .third {
+      background-image: url(../img/works/work3.png); }
+    .portfolio_bg .portfolio .fourth {
+      background-image: url(../img/works/work4.png); }
+
+.blog_bg {
+  background-color: #d74680; }
+  .blog_bg .blog {
+    height: 900px;
+    margin: 0 auto;
+    max-width: 1100px;
+    padding-top: 60px;
+    position: relative; }
+
+.contacts_bg {
+  background-color: #3c5499; }
+  .contacts_bg .contacts {
+    height: 900px;
+    margin: 0 auto;
+    max-width: 1100px;
+    padding-top: 60px;
+    position: relative; }
 
 body {
   z-index: 90;

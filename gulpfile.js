@@ -29,17 +29,17 @@ gulp.task('browser-sync', function() { // Создаем таск browser-sync
 });
 
 gulp.task('css-libs', ['sass'], function() {
-	return gulp.src('app/css/main.css')
+	return gulp.src(['app/css/main.css','app/css/reset.css'])
 	// Выбираем файл для минификации
-	    .pipe(cssnano()) // Сжимаем
-		.pipe(rename({suffix: '.min'}))
+	    .pipe(concat('main.min.css'))
+		.pipe(cssnano()) // Сжимаем
 		.pipe(gulp.dest('app/css')); // Выгружаем в папку app/css
 });
 
 gulp.task('commonjs', function() {
-	return gulp.src('app/js/common.js')
+	return gulp.src(['app/js/common.js','app/libs/jquery-3.1.0.min.js'])
+		.pipe(concat('common.min.js'))
 		.pipe(uglify()) // Сжимаем JS файл
-		.pipe(rename({suffix: '.min'}))
 		.pipe(gulp.dest('app/js')); // Выгружаем в папку app/js
 });
 
