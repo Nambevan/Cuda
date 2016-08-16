@@ -54,7 +54,8 @@
       font-weight: bold;
       position: absolute;
       top: 380px;
-      left: 400px; }
+      left: 400px;
+      cursor: pointer; }
 
 .border {
   width: 87px;
@@ -259,18 +260,98 @@
     max-width: 1100px;
     padding-top: 60px;
     position: relative; }
-    .portfolio_bg .portfolio .portfolio_item {
-      height: 300px;
-      width: 49%;
-      display: inline-block; }
-    .portfolio_bg .portfolio .first {
-      background-image: url(../img/works/work1.png); }
-    .portfolio_bg .portfolio .second {
-      background-image: url(../img/works/work2.png); }
-    .portfolio_bg .portfolio .third {
-      background-image: url(../img/works/work3.png); }
-    .portfolio_bg .portfolio .fourth {
-      background-image: url(../img/works/work4.png); }
+    .portfolio_bg .portfolio .portfolio_text {
+      position: absolute;
+      top: 117px;
+      left: 215px;
+      text-align: center;
+      color: #3c4761; }
+      .portfolio_bg .portfolio .portfolio_text .border {
+        background-color: #e5c37f; }
+      .portfolio_bg .portfolio .portfolio_text .portfolio_title {
+        font-size: 35px;
+        font-weight: bold; }
+      .portfolio_bg .portfolio .portfolio_text .portfolio_subtitle {
+        font-size: 17px;
+        display: block;
+        width: 665px;
+        margin-top: 50px; }
+    .portfolio_bg .portfolio .portfolio_nav {
+      position: absolute;
+      margin-left: 50%;
+      margin-right: 251px;
+      left: -253px;
+      top: 300px; }
+      .portfolio_bg .portfolio .portfolio_nav li {
+        background-color: #000000;
+        cursor: pointer;
+        display: inline-block;
+        color: #353535;
+        font-size: 22px;
+        height: 40px;
+        width: 85px;
+        margin-right: 10px;
+        -webkit-border-radius: 5px;
+                border-radius: 5px;
+        padding: 10px 15px 0 15px;
+        text-align: center; }
+      .portfolio_bg .portfolio .portfolio_nav li:hover {
+        background-color: #ffffff; }
+      .portfolio_bg .portfolio .portfolio_nav .active {
+        background-color: #ffffff; }
+    .portfolio_bg .portfolio .portfolio_items {
+      margin-top: 300px; }
+      .portfolio_bg .portfolio .portfolio_items .portfolio_item {
+        overflow: hidden;
+        height: 300px;
+        width: 49%;
+        display: inline-block;
+        text-align: center;
+        margin-top: 60px;
+        margin-left: 5px; }
+        .portfolio_bg .portfolio .portfolio_items .portfolio_item div {
+          height: 100%;
+          width: 100%; }
+        .portfolio_bg .portfolio .portfolio_items .portfolio_item .work_name {
+          padding: 15px;
+          display: block;
+          color: #3c4761; }
+        .portfolio_bg .portfolio .portfolio_items .portfolio_item .first {
+          background-image: url(../img/works/work1.png);
+          background-position: center center; }
+        .portfolio_bg .portfolio .portfolio_items .portfolio_item .second {
+          background-image: url(../img/works/work2.png);
+          background-position: center center; }
+        .portfolio_bg .portfolio .portfolio_items .portfolio_item .third {
+          background-image: url(../img/works/work3.png);
+          background-position: center center; }
+        .portfolio_bg .portfolio .portfolio_items .portfolio_item .fourth {
+          background-image: url(../img/works/work4.png);
+          background-position: center center; }
+        .portfolio_bg .portfolio .portfolio_items .portfolio_item .item {
+          -webkit-transition: -webkit-transform .3s;
+          transition: -webkit-transform .3s;
+          transition: transform .3s;
+          transition: transform .3s, -webkit-transform .3s; }
+        .portfolio_bg .portfolio .portfolio_items .portfolio_item .item:hover {
+          -webkit-transform: scale(1.05, 1.05);
+              -ms-transform: scale(1.05, 1.05);
+                  transform: scale(1.05, 1.05); }
+    .portfolio_bg .portfolio button {
+      background-color: #17c2a4;
+      width: 295px;
+      height: 70px;
+      border: none;
+      -webkit-border-radius: 5px;
+              border-radius: 5px;
+      border-bottom: 3px solid #13a78d;
+      color: #ffffff;
+      font-size: 15px;
+      font-weight: bold;
+      position: absolute;
+      bottom: 115px;
+      left: 400px;
+      cursor: pointer; }
 
 .blog_bg {
   background-color: #d74680; }

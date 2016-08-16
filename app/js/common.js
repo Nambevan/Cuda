@@ -304,3 +304,19 @@ var timer_4 = setInterval(function() {
         clearInterval(timer_4);
     }
 }, 100);
+
+$(window).scroll(function () {
+    var st = $(this).scrollTop();
+    $('.home>button').css({
+        "transform": "translate(0%," +st/5 + "%"
+    });
+});
+
+
+$(document).ready(function() {
+
+    $('.li').click(function () {
+        $('.li').css('background-color','#000000');
+        $(this).css('background-color','#ffffff');
+    });
+});

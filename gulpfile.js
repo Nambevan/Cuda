@@ -37,7 +37,7 @@ gulp.task('css-libs', ['sass'], function() {
 });
 
 gulp.task('commonjs', function() {
-	return gulp.src(['app/js/common.js','app/libs/jquery-3.1.0.min.js'])
+	return gulp.src(['app/libs/jquery-3.1.0.min.js','app/js/common.js'])
 		.pipe(concat('common.min.js'))
 		.pipe(uglify()) // Сжимаем JS файл
 		.pipe(gulp.dest('app/js')); // Выгружаем в папку app/js
