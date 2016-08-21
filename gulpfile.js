@@ -65,7 +65,7 @@ gulp.task('img', function() {
 		.pipe(gulp.dest('dist/img')); // Выгружаем на продакшен
 });
 
-gulp.task('build', ['clean', 'img', 'sass', 'commonjs'], function() {
+gulp.task('build', ['clean','css-libs', 'img', 'sass', 'commonjs'], function() {
 
 	var buildCss = gulp.src('app/css/main.min.css') // Переносим css в продакшен
 	.pipe(gulp.dest('dist/css'))

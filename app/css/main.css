@@ -302,7 +302,6 @@
     .portfolio_bg .portfolio .portfolio_items {
       margin-top: 300px; }
       .portfolio_bg .portfolio .portfolio_items .portfolio_item {
-        overflow: hidden;
         height: 300px;
         width: 49%;
         display: inline-block;
@@ -361,6 +360,51 @@
     max-width: 1100px;
     padding-top: 60px;
     position: relative; }
+    .blog_bg .blog .blog_text {
+      position: absolute;
+      top: 117px;
+      left: 215px;
+      text-align: center;
+      color: #ffffff; }
+      .blog_bg .blog .blog_text .border {
+        background-color: #e5c37f; }
+      .blog_bg .blog .blog_text .blog_title {
+        font-size: 35px;
+        font-weight: bold; }
+      .blog_bg .blog .blog_text .blog_subtitle {
+        font-size: 17px;
+        display: block;
+        width: 665px;
+        margin-top: 50px; }
+    .blog_bg .blog .blog_items {
+      margin-top: 150px; }
+      .blog_bg .blog .blog_items .blog_item {
+        width: 45%;
+        display: inline-block;
+        margin-top: 150px;
+        margin-right: 50px;
+        vertical-align: top; }
+        .blog_bg .blog .blog_items .blog_item .blog_photo {
+          width: 100px;
+          height: 100px;
+          background: url("../img/team/team.png") no-repeat;
+          background-position: center 0;
+          background-size: cover;
+          -webkit-border-radius: 50%;
+                  border-radius: 50%;
+          float: left;
+          margin-right: 50px; }
+        .blog_bg .blog .blog_items .blog_item .comment {
+          color: #ffffff;
+          font-style: italic; }
+        .blog_bg .blog .blog_items .blog_item .autor {
+          text-align: right; }
+          .blog_bg .blog .blog_items .blog_item .autor .author_name {
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 15px; }
+          .blog_bg .blog .blog_items .blog_item .autor .author_place {
+            color: #ffdd99; }
 
 .contacts_bg {
   background-color: #3c5499; }
