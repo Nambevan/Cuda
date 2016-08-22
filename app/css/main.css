@@ -409,11 +409,81 @@
 .contacts_bg {
   background-color: #3c5499; }
   .contacts_bg .contacts {
-    height: 900px;
+    height: 820px;
     margin: 0 auto;
     max-width: 1100px;
     padding-top: 60px;
     position: relative; }
+    .contacts_bg .contacts .contacts_text {
+      position: absolute;
+      top: 117px;
+      left: 175px;
+      text-align: center;
+      color: #fff; }
+      .contacts_bg .contacts .contacts_text .border {
+        background-color: #273a71; }
+      .contacts_bg .contacts .contacts_text .contacts_title {
+        font-size: 35px;
+        font-weight: bold; }
+      .contacts_bg .contacts .contacts_text .contacts_subtitle {
+        font-size: 17px;
+        display: block;
+        width: 750px;
+        margin-top: 50px; }
+    .contacts_bg .contacts .ask_question {
+      margin-top: 300px;
+      margin-left: 115px; }
+      .contacts_bg .contacts .ask_question .info, .contacts_bg .contacts .ask_question textarea {
+        background-color: #273a71;
+        border: none;
+        color: #ffffff;
+        -webkit-border-radius: 5px;
+                border-radius: 5px;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        padding: 25px; }
+      .contacts_bg .contacts .ask_question .info {
+        width: 420px;
+        height: 50px;
+        margin-right: 25px; }
+      .contacts_bg .contacts .ask_question textarea {
+        width: 868px;
+        height: 200px;
+        margin-top: 30px; }
+      .contacts_bg .contacts .ask_question .submit_btn {
+        width: 295px;
+        height: 70px;
+        background-color: #30bae7;
+        border: none;
+        font-weight: 600;
+        color: #ffffff;
+        font-size: 17px;
+        -webkit-border-radius: 5px;
+                border-radius: 5px;
+        margin-left: 28%;
+        margin-top: 60px; }
+
+.footer_bg {
+  background-color: #344b8e; }
+  .footer_bg .footer {
+    color: #ffffff;
+    font-size: 25px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 1100px;
+    height: 117px; }
+    .footer_bg .footer ul {
+      margin-left: 80px; }
+      .footer_bg .footer ul li {
+        display: inline-block;
+        margin-right: 50px;
+        margin-top: 45px;
+        cursor: pointer; }
+      .footer_bg .footer ul li:hover {
+        color: #30bae7; }
+      .footer_bg .footer ul li:last-child {
+        margin-right: 0; }
 
 body {
   z-index: 90;
