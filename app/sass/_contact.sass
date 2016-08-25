@@ -7,6 +7,7 @@
        padding-top: 60px
        position: relative
        .contacts_text
+           display: none
            position: absolute
            top: 117px
            left: 175px
@@ -23,8 +24,11 @@
                width: 750px
                margin-top: 50px
        .ask_question
+           display: none
            margin-top: 300px
            margin-left: 115px
+           tr
+               display: inline-block
            .info,textarea
                background-color: #273a71
                border: none
@@ -40,6 +44,10 @@
                width: 868px
                height: 200px
                margin-top: 30px
+           label
+               .error-message
+                   left: 115px
+                   bottom: 217px
            .submit_btn
                width: 295px
                height: 70px
@@ -51,9 +59,11 @@
                border-radius: 5px
                margin-left: 28%
                margin-top: 60px
+               cursor: pointer
 .footer_bg
     background-color: #344b8e
     .footer
+        display: none
         color: #ffffff
         font-size: 25px
         box-sizing: border-box
@@ -71,3 +81,8 @@
                 color: #30bae7
             li:last-child
                 margin-right: 0
+.error
+    color: red
+.error-message
+    position: absolute
+    font-size: 15px

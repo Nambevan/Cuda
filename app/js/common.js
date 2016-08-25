@@ -1,3 +1,4 @@
+//                                      progress bars
 var Progress = function(opt) {
     this.option = this.extend({
         radius: 70,
@@ -304,19 +305,111 @@ var timer_4 = setInterval(function() {
         clearInterval(timer_4);
     }
 }, 100);
-
-$(window).scroll(function () {
-    var st = $(this).scrollTop();
-    $('.home>button').css({
-        "transform": "translate(0%," +st/5 + "%"
-    });
-});
-
+//progress bars ENDS
 
 $(document).ready(function() {
-
+//portfolio navigation
     $('.li').click(function () {
         $('.li').css('background-color','#000000');
         $(this).css('background-color','#ffffff');
     });
+//home page anamation
+    $('.home_text').addClass('animated bounceInLeft');
+    $('.work').addClass('animated bounceInRight');
+//scroll animation
+    $( window ).scroll(function() {
+
+        var pos = $("body").scrollTop();
+//$('.up_btn').text(pos);
+//scroll animation about
+        if ( pos > 100 ) {
+            $( ".about_text,.services" ).fadeIn("slow");
+            $( ".up_btn" ).css( "display", "block" ).addClass('animated fadeInRight');
+        }
+        else{
+            $( ".up_btn,.about_text,.services" ).fadeOut("slow");
+        }
+//scroll animation team
+        if ( pos > 1000 ) {
+            $(".team_text,.team_item").fadeIn("slow");
+        }
+        else{
+            $(".team_text,.team_item").fadeOut("slow");
+        }
+//scroll animation skills
+        if ( pos > 2000 ) {
+            $(".skills_text,.skill_items").fadeIn("slow");
+        }
+        else{
+            $(".skills_text,.skill_items").fadeOut("slow");
+        }
+//scroll animation works
+        if ( pos > 2600 ) {
+            $(".portfolio_text,.portfolio_nav,.portfolio_items").fadeIn("slow");
+        }
+        else{
+            $(".portfolio_text,.portfolio_nav,.portfolio_items").fadeOut("slow");
+        }
+//scroll animation blog
+        if ( pos > 4100 ) {
+            $(".blog_text,.blog_items").fadeIn("slow");
+        }
+        else{
+            $(".blog_text,.blog_items").fadeOut("slow");
+        }
+//scroll animation feedback
+        if ( pos > 5000 ) {
+            $(".contacts_text,.ask_question").fadeIn("slow");
+        }
+        else{
+            $(".contacts_text,.ask_question").fadeOut("slow");
+        }
+//scroll animation footer
+        if ( pos > 5600 ) {
+            $(".footer").fadeIn("slow");
+        }
+        else{
+            $(".footer").fadeOut("slow");
+        }
+    });
 });
+
+
+
+
+//validation
+
+function showError(container, errorMessage) {
+    container.className = 'error';
+    var msgElem = document.createElement('span');
+    msgElem.className = "error-message";
+    msgElem.innerHTML = errorMessage;
+    container.appendChild(msgElem);
+}
+
+function resetError(container) {
+    container.className = '';
+    if (container.lastChild.className == "error-message") {
+        container.removeChild(container.lastChild);
+    }
+}
+
+function validate(form) {
+    var elems = form.elements;
+
+    resetError(elems.from.parentNode);
+    if (!elems.from.value) {
+        showError(elems.from.parentNode, ' Write your name');
+    }
+
+    resetError(elems.mail.parentNode);
+    if (!elems.mail.value) {
+        showError(elems.mail.parentNode, ' Write your pass');
+    }
+
+    resetError(elems.message.parentNode);
+    if (!elems.message.value) {
+        showError(elems.message.parentNode, ' Write your massage');
+    }
+}
+

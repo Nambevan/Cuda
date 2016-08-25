@@ -29,7 +29,7 @@ gulp.task('browser-sync', function() { // Создаем таск browser-sync
 });
 
 gulp.task('css-libs', ['sass'], function() {
-	return gulp.src(['app/css/main.css','app/css/reset.css'])
+	return gulp.src(['app/css/main.css','app/css/reset.css','app/libs/animate.css','app/css/adaptive.css'])
 	// Выбираем файл для минификации
 	    .pipe(concat('main.min.css'))
 		.pipe(cssnano()) // Сжимаем

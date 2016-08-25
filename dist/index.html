@@ -8,6 +8,7 @@
 </head>
 <body>
 
+
 	<div class="home_bg">
 		<div class="home">
 			<a id="home" class="your_pos"></a>
@@ -29,7 +30,7 @@
 
 			</div>
 
-			<button>WORK WITH US!</button>
+			<button class="work">WORK WITH US!</button>
 
 		</div>
 
@@ -83,8 +84,8 @@
 					<span class="team_subtitle">We are small team of designers, who help brands with big ideas</span>
 				</div>
 
-				<div class="team_item">
-					<div class="team_photo photo_1"></div>
+				<div class="team_item up">
+					<div class="team_photo photo_1 "></div>
 					<span class="team_name">ANNE HATHAWAY</span><br>
 					<span class="team_position"><a href="">CEO/ Marketing Guru</a></span><br>
 					<span class="team_subtext">Lorem ipsum dolor sit amet, consectetur adipisicing elit.Aut consequatur debitis</span>
@@ -96,8 +97,8 @@
 					</ul>
 				</div>
 
-				<div class="team_item">
-					<div class="team_photo photo_2"></div>
+				<div class="team_item up">
+					<div class="team_photo photo_2 "></div>
 					<span class="team_name">KATE UPTON</span><br>
 					<span class="team_position"><a href="">Creative Director</a></span><br>
 					<span class="team_subtext">Lorem ipsum dolor sit amet, consectetur adipisicing elit.Aut consequatur debitis</span>
@@ -302,43 +303,59 @@
 
 			<div class="ask_question">
 
-				<form action="">
+				<form>
 
-					<input type="text" class="info" placeholder="Youe name">
+					<table>
+						<tr>
+							<td>
+								<input name="from" type="text" class="info" placeholder="Your name:">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input name="mail" class="info" placeholder="Your Email:">
+							</td>
+						</tr>
 
-					<input type="text" class="info" placeholder="Your Email:">
+					</table>
 
-					<p><textarea  name="text" placeholder="Your Message:"></textarea></p>
+					<label>
+						<textarea  name="message" placeholder="Your Message:"></textarea>
+					</label>
 
-					<p><input type="submit" value="SEND MESSAGE" class="submit_btn"></p>
+					<input class="submit_btn" type="button" onclick="validate(this.form)" value="SEND MESSAGE">
 
 				</form>
 
-			</div>
+                </div>
 
 
-		</div>
+            </div>
 
+        </div>
+
+        <div class="footer_bg">
+
+           <div class="footer">
+
+               <ul>
+                   <li>Facebook</li>
+                   <li>Twitter</li>
+                   <li>Google+</li>
+                   <li>Linkedin</li>
+                   <li>Behance</li>
+                   <li>Dribbble</li>
+                   <li>Github</li>
+               </ul>
+
+           </div>
+
+        </div>
+
+	<div class="up_btn">
+		<a href="#"></a>
 	</div>
+        <script src="js/common.min.js"></script>
 
-	<div class="footer_bg">
-
-	   <div class="footer">
-
-		   <ul>
-			   <li>Facebook</li>
-			   <li>Twitter</li>
-			   <li>Google+</li>
-			   <li>Linkedin</li>
-			   <li>Behance</li>
-			   <li>Dribbble</li>
-			   <li>Github</li>
-		   </ul>
-
-	   </div>
-
-	</div>
-	<script src="js/common.min.js"></script>
-
-</body>
-</html>
+    </body>
+    </html>

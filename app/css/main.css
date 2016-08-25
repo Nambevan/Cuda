@@ -75,6 +75,7 @@
     padding-top: 60px;
     position: relative; }
     .about_bg .about .about_text {
+      display: none;
       position: absolute;
       top: 117px;
       left: 215px;
@@ -88,35 +89,37 @@
         display: block;
         width: 665px;
         margin-top: 50px; }
-  .about_bg .services .service_item {
-    margin-top: 320px;
-    display: inline-block;
-    width: 260px;
-    height: 340px;
-    color: #ffffff;
-    text-align: center;
-    margin-right: 10px; }
-    .about_bg .services .service_item .service_photo {
-      background-repeat: no-repeat;
-      width: 140px;
-      height: 130px;
-      margin-left: 60px;
-      margin-bottom: 60px; }
-    .about_bg .services .service_item .service_title {
-      font-size: 25px;
-      display: block;
-      margin-bottom: 15px;
-      font-weight: bold; }
-    .about_bg .services .service_item .service_text {
-      font-size: 20px; }
-    .about_bg .services .service_item .service_1 {
-      background-image: url("../img/services/flag.png"); }
-    .about_bg .services .service_item .service_2 {
-      background-image: url("../img/services/pencil.png"); }
-    .about_bg .services .service_item .service_3 {
-      background-image: url("../img/services/gears.png"); }
-    .about_bg .services .service_item .service_4 {
-      background-image: url("../img/services/rocket.png"); }
+  .about_bg .services {
+    display: none; }
+    .about_bg .services .service_item {
+      margin-top: 320px;
+      display: inline-block;
+      width: 260px;
+      height: 340px;
+      color: #ffffff;
+      text-align: center;
+      margin-right: 10px; }
+      .about_bg .services .service_item .service_photo {
+        background-repeat: no-repeat;
+        width: 140px;
+        height: 130px;
+        margin-left: 60px;
+        margin-bottom: 60px; }
+      .about_bg .services .service_item .service_title {
+        font-size: 25px;
+        display: block;
+        margin-bottom: 15px;
+        font-weight: bold; }
+      .about_bg .services .service_item .service_text {
+        font-size: 20px; }
+      .about_bg .services .service_item .service_1 {
+        background-image: url("../img/services/flag.png"); }
+      .about_bg .services .service_item .service_2 {
+        background-image: url("../img/services/pencil.png"); }
+      .about_bg .services .service_item .service_3 {
+        background-image: url("../img/services/gears.png"); }
+      .about_bg .services .service_item .service_4 {
+        background-image: url("../img/services/rocket.png"); }
 
 .team_bg {
   background-color: #e7f1f8; }
@@ -130,7 +133,8 @@
       position: absolute;
       top: 117px;
       left: 215px;
-      text-align: center; }
+      text-align: center;
+      display: none; }
       .team_bg .team .team_text .border {
         background-color: #c7d9e5; }
       .team_bg .team .team_text .team_title, .team_bg .team .team_text .team_subtitle {
@@ -147,6 +151,7 @@
         -ms-transform: scale(1.05, 1.05);
             transform: scale(1.05, 1.05); }
   .team_bg .team_item {
+    display: none;
     -webkit-transition: -webkit-transform .3s;
     transition: -webkit-transform .3s;
     transition: transform .3s;
@@ -159,7 +164,7 @@
     margin-right: 20px;
     text-align: center;
     padding: 0 10px 0 10px;
-    display: inline-block; }
+    float: left; }
     .team_bg .team_item .photo_1 {
       background: url("../img/team/team.png") no-repeat;
       background-position: center 0; }
@@ -225,6 +230,7 @@
   padding-top: 60px;
   position: relative; }
   .skills .skills_text {
+    display: none;
     position: absolute;
     top: 117px;
     left: 215px;
@@ -241,6 +247,7 @@
       width: 665px;
       margin-top: 50px; }
   .skills .skill_items {
+    display: none;
     margin-top: 326px; }
     .skills .skill_items .skill_name {
       font-size: 30px;
@@ -261,6 +268,7 @@
     padding-top: 60px;
     position: relative; }
     .portfolio_bg .portfolio .portfolio_text {
+      display: none;
       position: absolute;
       top: 117px;
       left: 215px;
@@ -277,6 +285,7 @@
         width: 665px;
         margin-top: 50px; }
     .portfolio_bg .portfolio .portfolio_nav {
+      display: none;
       position: absolute;
       margin-left: 50%;
       margin-right: 251px;
@@ -300,6 +309,7 @@
       .portfolio_bg .portfolio .portfolio_nav .active {
         background-color: #ffffff; }
     .portfolio_bg .portfolio .portfolio_items {
+      display: none;
       margin-top: 300px; }
       .portfolio_bg .portfolio .portfolio_items .portfolio_item {
         height: 300px;
@@ -307,7 +317,8 @@
         display: inline-block;
         text-align: center;
         margin-top: 60px;
-        margin-left: 5px; }
+        margin-left: 5px;
+        background-size: cover; }
         .portfolio_bg .portfolio .portfolio_items .portfolio_item div {
           height: 100%;
           width: 100%; }
@@ -317,16 +328,20 @@
           color: #3c4761; }
         .portfolio_bg .portfolio .portfolio_items .portfolio_item .first {
           background-image: url(../img/works/work1.png);
-          background-position: center center; }
+          background-position: center center;
+          background-repeat: no-repeat; }
         .portfolio_bg .portfolio .portfolio_items .portfolio_item .second {
           background-image: url(../img/works/work2.png);
-          background-position: center center; }
+          background-position: center center;
+          background-repeat: no-repeat; }
         .portfolio_bg .portfolio .portfolio_items .portfolio_item .third {
           background-image: url(../img/works/work3.png);
-          background-position: center center; }
+          background-position: center center;
+          background-repeat: no-repeat; }
         .portfolio_bg .portfolio .portfolio_items .portfolio_item .fourth {
           background-image: url(../img/works/work4.png);
-          background-position: center center; }
+          background-position: center center;
+          background-repeat: no-repeat; }
         .portfolio_bg .portfolio .portfolio_items .portfolio_item .item {
           -webkit-transition: -webkit-transform .3s;
           transition: -webkit-transform .3s;
@@ -337,6 +352,7 @@
               -ms-transform: scale(1.05, 1.05);
                   transform: scale(1.05, 1.05); }
     .portfolio_bg .portfolio button {
+      display: none;
       background-color: #17c2a4;
       width: 295px;
       height: 70px;
@@ -361,6 +377,7 @@
     padding-top: 60px;
     position: relative; }
     .blog_bg .blog .blog_text {
+      display: none;
       position: absolute;
       top: 117px;
       left: 215px;
@@ -377,6 +394,7 @@
         width: 665px;
         margin-top: 50px; }
     .blog_bg .blog .blog_items {
+      display: none;
       margin-top: 150px; }
       .blog_bg .blog .blog_items .blog_item {
         width: 45%;
@@ -415,6 +433,7 @@
     padding-top: 60px;
     position: relative; }
     .contacts_bg .contacts .contacts_text {
+      display: none;
       position: absolute;
       top: 117px;
       left: 175px;
@@ -431,8 +450,11 @@
         width: 750px;
         margin-top: 50px; }
     .contacts_bg .contacts .ask_question {
+      display: none;
       margin-top: 300px;
       margin-left: 115px; }
+      .contacts_bg .contacts .ask_question tr {
+        display: inline-block; }
       .contacts_bg .contacts .ask_question .info, .contacts_bg .contacts .ask_question textarea {
         background-color: #273a71;
         border: none;
@@ -450,6 +472,9 @@
         width: 868px;
         height: 200px;
         margin-top: 30px; }
+      .contacts_bg .contacts .ask_question label .error-message {
+        left: 115px;
+        bottom: 217px; }
       .contacts_bg .contacts .ask_question .submit_btn {
         width: 295px;
         height: 70px;
@@ -461,11 +486,13 @@
         -webkit-border-radius: 5px;
                 border-radius: 5px;
         margin-left: 28%;
-        margin-top: 60px; }
+        margin-top: 60px;
+        cursor: pointer; }
 
 .footer_bg {
   background-color: #344b8e; }
   .footer_bg .footer {
+    display: none;
     color: #ffffff;
     font-size: 25px;
     -webkit-box-sizing: border-box;
@@ -485,9 +512,32 @@
       .footer_bg .footer ul li:last-child {
         margin-right: 0; }
 
+.error {
+  color: red; }
+
+.error-message {
+  position: absolute;
+  font-size: 15px; }
+
 body {
   z-index: 90;
   font-family: 'Titillium Web', sans-serif; }
   body .your_pos {
     position: absolute;
     top: 0; }
+  body .up_btn {
+    background: url("../img/up.png");
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    opacity: .5;
+    display: none; }
+    body .up_btn a {
+      width: 50px;
+      height: 50px;
+      display: block; }
+  body .up_btn:hover {
+    opacity: 1; }
