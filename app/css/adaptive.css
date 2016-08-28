@@ -19,6 +19,9 @@
     .portfolio_bg .portfolio .portfolio_nav {
         margin-right: 0;
     }
+    .footer_bg .footer ul {
+        margin-left: 45px;
+    }
 }
 @media screen and (max-width: 1015px){
     .team_bg .team_item {
@@ -45,6 +48,14 @@
     .team_bg .team_item .team_name {
         font-size: 17px;
     }
+    .footer_bg .footer ul {
+        margin-left: 20px;
+    }
+}
+@media screen and (max-width: 965px){
+    .footer_bg .footer {
+        font-size: 23px;
+    }
 }
 @media screen and (max-width: 958px){
     .home_bg .home button {
@@ -68,10 +79,19 @@
     .contacts_bg .contacts .contacts_text {
         left: 140px;
     }
+    .skills {
+        height: 620px;
+    }
+    .portfolio_bg .portfolio {
+        height: 1200px;
+    }
 }
 @media screen and (max-width: 926px){
     .team_bg .team_item ul {
         margin-left: 8px;
+    }
+    .footer_bg .footer {
+        font-size: 20px;
     }
 }
 @media screen and (max-width: 915px){
@@ -136,7 +156,84 @@
         width: 100%;
         display: block;
     }
+    .about_bg .about .about_text {
+        left: 100px;
+    }
+    .blog_bg .blog .blog_text {
+        left: 100px;
+    }
     .portfolio_bg .portfolio {
         height: 1750px;
+    }
+    .team_bg .team .team_text {
+        left: 100px;
+    }
+    .skills .skills_text {
+        left: 100px;
+    }
+    .contacts_bg .contacts .contacts_text {
+        left: 50px;
+    }
+    .portfolio_bg .portfolio .portfolio_text {
+        left: 100px;
+    }
+    .portfolio_bg .portfolio .portfolio_nav {
+        left: -245px;
+    }
+    .first {
+        margin-top: 335px;
+    }
+    .portfolio_bg .portfolio {
+        height: 1780px;
+    }
+    .contacts_bg .contacts .ask_question .submit_btn {
+        margin-left: 22%;
+    }
+    .about_bg .services .service_item .service_text {
+        font-size: 15px;
+    }
+    .about_bg .services .service_item .service_title {
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+    .about_bg .services .service_item .service_photo {
+        margin-left: 40px;
+        margin-bottom: 48px;
+    }
+}
+@media screen and (max-width: 840px) {
+    .footer_bg .footer {
+        font-size: 19px;
+    }
+}
+@media screen and (max-width: 820px) {
+    .footer_bg .footer {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 790px) {
+    .footer_bg .footer {
+        font-size: 17px;
+    }
+    .about_bg .about .about_text {
+        left: 70px;
+    }
+    .team_bg .team .team_text {
+        left: 70px;
+    }
+    .skills .skills_text {
+        left: 70px;
+    }
+    .portfolio_bg .portfolio .portfolio_text {
+        left: 70px;
+    }
+    .blog_bg .blog .blog_text {
+        left: 70px;
+    }
+    .contacts_bg .contacts .contacts_text {
+        left: 17px;
+    }
+    .home_bg .home button {
+        left: 245px;
     }
 }

@@ -492,7 +492,6 @@
 .footer_bg {
   background-color: #344b8e; }
   .footer_bg .footer {
-    display: none;
     color: #ffffff;
     font-size: 25px;
     -webkit-box-sizing: border-box;
@@ -522,6 +521,18 @@
 body {
   z-index: 90;
   font-family: 'Titillium Web', sans-serif; }
+  body .position_nav {
+    display: none;
+    position: fixed;
+    top: 40%; }
+    body .position_nav li {
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
+      opacity: 0.1;
+      width: 25px;
+      height: 25px;
+      background: #0000AA;
+      margin: 5px; }
   body .your_pos {
     position: absolute;
     top: 0; }
@@ -532,12 +543,9 @@ body {
     background-size: cover;
     position: fixed;
     right: 50px;
-    bottom: 50px;
-    opacity: .5;
+    bottom: 100px;
     display: none; }
     body .up_btn a {
       width: 50px;
       height: 50px;
       display: block; }
-  body .up_btn:hover {
-    opacity: 1; }

@@ -321,13 +321,17 @@ $(document).ready(function() {
 
         var pos = $("body").scrollTop();
 //$('.up_btn').text(pos);
+
 //scroll animation about
         if ( pos > 100 ) {
-            $( ".about_text,.services" ).fadeIn("slow");
+            $( ".about_text, .services" ).fadeIn("slow");
             $( ".up_btn" ).css( "display", "block" ).addClass('animated fadeInRight');
+            $( ".position_nav" ).css( "display", "block" ).addClass('animated fadeInLeft');
+            $( ".about_pos" ).css( "opacity", ".4" );
         }
         else{
-            $( ".up_btn,.about_text,.services" ).fadeOut("slow");
+            $( ".up_btn,.about_text,.services,.position_nav" ).fadeOut("slow");
+            $( ".about_pos" ).css( "opacity", ".1" );
         }
 //scroll animation team
         if ( pos > 1000 ) {
@@ -346,31 +350,32 @@ $(document).ready(function() {
 //scroll animation works
         if ( pos > 2600 ) {
             $(".portfolio_text,.portfolio_nav,.portfolio_items").fadeIn("slow");
+            $( ".work_pos" ).css( "opacity", ".6" );
         }
         else{
             $(".portfolio_text,.portfolio_nav,.portfolio_items").fadeOut("slow");
+            $( ".work_pos" ).css( "opacity", ".1" );
         }
 //scroll animation blog
         if ( pos > 4100 ) {
             $(".blog_text,.blog_items").fadeIn("slow");
+            $( ".blog_pos" ).css( "opacity", ".8" );
         }
         else{
             $(".blog_text,.blog_items").fadeOut("slow");
+            $( ".blog_pos" ).css( "opacity", ".1" );
+
         }
 //scroll animation feedback
         if ( pos > 5000 ) {
             $(".contacts_text,.ask_question").fadeIn("slow");
+            $( ".contact_pos" ).css( "opacity", "1" );
         }
         else{
             $(".contacts_text,.ask_question").fadeOut("slow");
+            $( ".contact_pos" ).css( "opacity", ".1" );
         }
-//scroll animation footer
-        if ( pos > 5600 ) {
-            $(".footer").fadeIn("slow");
-        }
-        else{
-            $(".footer").fadeOut("slow");
-        }
+
     });
 });
 
@@ -404,7 +409,7 @@ function validate(form) {
 
     resetError(elems.mail.parentNode);
     if (!elems.mail.value) {
-        showError(elems.mail.parentNode, ' Write your pass');
+        showError(elems.mail.parentNode, ' Write your Email');
     }
 
     resetError(elems.message.parentNode);
