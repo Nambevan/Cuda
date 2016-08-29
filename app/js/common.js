@@ -313,6 +313,7 @@ $(document).ready(function() {
         $('.li').css('background-color','#000000');
         $(this).css('background-color','#ffffff');
     });
+
 //home page anamation
     $('.home_text').addClass('animated bounceInLeft');
     $('.work').addClass('animated bounceInRight');
@@ -379,7 +380,16 @@ $(document).ready(function() {
     });
 });
 
-
+$(document).ready(function(){
+    $('a[href^="#"]').bind("click", function(e){
+        var anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $(anchor.attr('href')).offset().top
+        }, 1000);
+        e.preventDefault();
+    });
+    return false;
+});﻿
 
 
 //validation
