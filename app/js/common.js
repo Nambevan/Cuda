@@ -263,7 +263,7 @@ Progress.prototype = {
 
         this._drawText(n);
     }
-}
+};
 
 var progress_1 = new Progress({element: document.getElementById('canvasEl')});
 var n_1 = 0;
@@ -306,7 +306,16 @@ var timer_4 = setInterval(function() {
     }
 }, 100);
 //progress bars ENDS
-
+$(document).ready(function(){
+    $('a[href^="#"]').bind("click", function(e){
+        var anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $(anchor.attr('href')).offset().top
+        }, 1000);
+        e.preventDefault();
+    });
+    return false;
+});
 $(document).ready(function() {
 //portfolio navigation
     $('.li').click(function () {
@@ -321,10 +330,11 @@ $(document).ready(function() {
     $( window ).scroll(function() {
 
         var pos = $("body").scrollTop();
+        var pos_mos = $("body,html").scrollTop();
 //$('.up_btn').text(pos);
 
 //scroll animation about
-        if ( pos > 100 ) {
+        if ( pos > 100 || pos_mos > 100) {
             $( ".about_text, .services" ).fadeIn("slow");
             $( ".up_btn" ).css( "display", "block" ).addClass('animated fadeInRight');
             $( ".position_nav" ).css( "display", "block" ).addClass('animated fadeInLeft');
@@ -335,21 +345,21 @@ $(document).ready(function() {
             $( ".about_pos" ).css( "opacity", ".1" );
         }
 //scroll animation team
-        if ( pos > 1000 ) {
+        if ( pos > 1000 || pos_mos > 1000) {
             $(".team_text,.team_item").fadeIn("slow");
         }
         else{
             $(".team_text,.team_item").fadeOut("slow");
         }
 //scroll animation skills
-        if ( pos > 2000 ) {
+        if ( pos > 2000 || pos_mos > 2000) {
             $(".skills_text,.skill_items").fadeIn("slow");
         }
         else{
             $(".skills_text,.skill_items").fadeOut("slow");
         }
 //scroll animation works
-        if ( pos > 2600 ) {
+        if ( pos > 2600 || pos_mos > 2600) {
             $(".portfolio_text,.portfolio_nav,.portfolio_items").fadeIn("slow");
             $( ".work_pos" ).css( "opacity", ".6" );
         }
@@ -358,7 +368,7 @@ $(document).ready(function() {
             $( ".work_pos" ).css( "opacity", ".1" );
         }
 //scroll animation blog
-        if ( pos > 4100 ) {
+        if ( pos > 4100 || pos_mos > 4100 ) {
             $(".blog_text,.blog_items").fadeIn("slow");
             $( ".blog_pos" ).css( "opacity", ".8" );
         }
@@ -368,7 +378,7 @@ $(document).ready(function() {
 
         }
 //scroll animation feedback
-        if ( pos > 5000 ) {
+        if ( pos > 5000 || pos_mos >5000 ) {
             $(".contacts_text,.ask_question").fadeIn("slow");
             $( ".contact_pos" ).css( "opacity", "1" );
         }
@@ -379,17 +389,6 @@ $(document).ready(function() {
 
     });
 });
-
-$(document).ready(function(){
-    $('a[href^="#"]').bind("click", function(e){
-        var anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: $(anchor.attr('href')).offset().top
-        }, 1000);
-        e.preventDefault();
-    });
-    return false;
-});﻿
 
 
 //validation
@@ -427,4 +426,6 @@ function validate(form) {
         showError(elems.message.parentNode, ' Write your massage');
     }
 }
+
+
 
